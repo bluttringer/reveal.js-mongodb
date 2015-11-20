@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>MongoDB</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -16,6 +16,9 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<link rel="stylesheet" href="css/tweak.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -41,140 +44,319 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>MongoDB</h1>
+					<h3>une présentation orientée document</h3>
+					<h1 style="color: #2F994D"><i class="fa fa-leaf"></i></h1>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Benoit Luttringer</small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<h2>Table des matières</h2>				
+					<ol>
+						<li>Présentation & fonctionnalités</li>
+						<li>Dis, c'est quoi un document?</li>
+						<li>Les mains dans le cambouis</li>
+						<li>Pour aller plus loin</li>
+						<li>Concrètement, on fait quoi?</li>
+						<li>Démo</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h1>Présentation & Fonctionnalités</h1>
+					<h1 style="color: #2F994D"><i class="fa fa-leaf"></i></h1>
 				</section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
+				<section>		
+					<h2 style="color: #2F994D"><i class="fa fa-leaf"></i></h2>
+					<h2>Un indice chez vous: <u>énorme</u></h2>			
+					<ul>						
+						<li>Je suis une base de données qui stocke des documents</li>
+						<li>J'offre de hautes performances</li>
+						<li>Je suis capable de répliquer les données</li>
+						<li>Je peux partager mes données sur plusieurs machines</li>
+						<li>Mon nom vient de l'anglais 'humongous' qui veut dire 'énorme'</li>
+					</ul>
+					
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+					<h2 style="color: #2F994D"><i class="fa fa-leaf"></i></h2>
+					<h2>Je suis... mongoDB!</h2>
+					<p class="fragment">
+						<img src="https://45.media.tumblr.com/da0f6556b46679a31927f97d6da9eab1/tumblr_nj0c2keui41rb2l1co1_400.gif">
 					</p>
 				</section>
 
 				<section>
-					<h2>Touch Optimized</h2>
+					<h2 style="color: #2F994D"><i class="fa fa-leaf"></i></h2>
+					<h2>Fonctionnalités clés</h2>
 					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+						Stockage de documents
 					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+					<p>
+						Hautes performances
+					</p>		
+					<p>
+						Haute disponibilité
+					</p>
+					<p>
+						Haute capacité
+					</p>
+					<aside class="notes">
+						<ul>
+							<li>Base de données opensource</li>
+							<li>
+								Avantages des documents
+								<ul>
+									<li>format natif javascript (idéal pour applis web)</li>
+									<li>sous-document et tableaux réduisent le besoin de jointures (ça tombe bien)</li>
+									<li>schéma non fixé, permet le polymorphisme</li>
+								</ul>
+							</li>
+							<li>Hautes performances (index, sous-documents pour réduire les I/O)</li>
+							<li>Haute dispo (failover automatique, redondance des données)</li>
+							<li>La scalabilité horizontale est au coeur des fonctionnalités de mongo avec sharding automatique sur clé de partitionnement</li>
+						</ul>						
+					</aside>			
 				</section>
 
 				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+					<h2 style="color: #2F994D"><i class="fa fa-leaf"></i></h2>
+					<h2>Mais...</h2>
+					<p>
+						MongoDB n'offre pas certaines fonctionnalités, contrairement aux bases relationnelles classiques
+					</p>
+					<p class="fragment fade-out height-0">
+						<img src="https://49.media.tumblr.com/ee36b9099b6ea203b57745ef956e81cb/tumblr_nqziftTheZ1s266z3o1_500.gif">
+					</p>
+										
+					<p class="fragment">
+						Les jointures
+						<p class="fragment">
+							<span class="subtext"><i class="fa fa-arrow-right"></i> Adapter le modèle</span>
+						</p>
+					</p>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
+					<p class="fragment">
+						Les transactions
+						<p class="fragment">
+							<span class="subtext"><i class="fa fa-arrow-right"></i> Mais opérations atomiques sur un seul document</span>
+						</p>
+					</p>
+
+					<aside class="notes">
+						<p>
+							<ul>
+								<li>Jointures: à voir plus tard dans la présentation, ce n'est pas un désavantage mais cela force à penser le modèle d'une façon différente d'une base relationnelle</li>
+								<li>Transactions: en fait pas de transaction multi-documents. On ne peut pas faire de l'ACID (Atomicité, Cohérence, Isolation, Durabilité) comme en relationnel mais par contre les opérations sur un seul document sont atomiques. Encore une fois, nécessité d'adapter le modèle (mais mongo a un modèle avec des sous documents, des tableaux: une base relationnelle réalise la même chose avec <u>plusieurs</u> tables et donc a besoin de transactions ACID)</li>
+							</ul>
+						</p>					
+					</aside>	
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
+				<section>
+					<h2 style="color: #2F994D"><i class="fa fa-leaf"></i></h2>
+					<h2>Installation</h2>
 					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
+						MongoDB peut être installée sans difficulté particulière sur Linux, OSX, Windows.
 					</p>
 				</section>
 
-				<section id="themes">
-					<h2>Themes</h2>
+				<section>
+					<h2 style="color: #2F994D"><i class="fa fa-leaf"></i></h2>
+					<h2>MongoDB Enterprise</h2>
 					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+						MongoDB est opensource mais il existe une version Enterprise qui apporte en plus:
+						<ul>
+							<li>Du support</li>
+							<li>Des outils de management
+								<ul>
+									<li>Monitoring (performance des requêtes par exemple)</li>
+									<li>Automatisation de tâches</li>
+									<li>Sauvegardes</li>
+								</ul>
+							</li>
+							<li>Une meilleur intégration des outils de sécurité: LDAP, Kerberos</li>
+						</ul>
 					</p>
+				</section>
+
+				<section>
+					<h1>Dis, c'est quoi un document?</h1>
+					<h1><i class="fa fa-file"></i></h1>
+				</section>
+
+				<section>	
+					<h2><i class="fa fa-file"></i></h2>		
+					<h2>Définition</h2>		
+					<p>
+						Un enregistrement MongoDB est un document qui est lui même une structure de données composée de clés / valeurs (format similaire au JSON)					
+					</p>
+					<p>
+						Les valeurs de champs peuvent inclure d'autres documents, des tableaux et des tableaux de documents.
+					</p>
+					<p>
+						Un ensemble de documents est appelé une collection (l'équivalent d'une table en relationnel)
+					</p>
+				</section>
+
+				<section>	
+					<h2><i class="fa fa-file"></i></h2>				
+					<h2>Un exemple</h2>
+					<pre><code data-trim>
+{
+	"title": "Electric Ladyland",
+	"release_year": "1968",
+	"genres": ["blues rock", "acid rock", "psychedelic rock"],
+	"musicians": [{
+			"name": "Jimi Hendrix",
+			"roles": ["lead singer", "guitarist"]	
+		}, {
+			"name": "Mitch Mitchell",
+			"roles": ["drums", "percussions"]
+		}, {
+			"name": "Noel Redding", 
+			"roles": ["bass guitar", "singer"]
+		}],
+	"tracks_list": ...
+}				
+				    </code></pre>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-file"></i></h2>				
+					<h2>Types</h2>
+					<p>
+						Tous les types classiques (Numérique, chaînes de caractères, dates, timestamps, etc.)						
+					</p>
+					<p><i class="fa fa-plus"></i></p>
+					<p>
+						GridFS pour stocker des fichiers de grande taille, GeoJSON pour les données géospatiales
+					</p>
+				</section>
+
+				<section>
+					<h1>Les mains dans le cambouis</h1>
+					<h1 style="color: #5E63C2;"><i class="fa fa-hand-spock-o"></i></h1>
+					<h3>Interagir avec la base</h3>
+				</section>
+
+				<section>
+					<h2 style="color: #5E63C2;"><i class="fa fa-hand-spock-o"></i></h2>
+					<h2>MongoDB Shell</h2>
+					<p>Le shell mongo permet de se connecter à une base MongoDB et d'interagir avec la base et les données qu'elle contient</p>
+					<pre>
+prompt> mongo &lt;hostname&gt;/&lt;database&gt;
+					</pre>
+					<p>
+						pour se connecter à la base indiquée
+					</p>
+				</section>
+
+				<section>
+					<h2 style="color: #5E63C2;"><i class="fa fa-hand-spock-o"></i></h2>
+					<h2>MongoDB Shell</h2>
+					<p>Insérer un document dans une collection (qui sera créée si elle n'existe pas)</p>
+					<pre><code>
+db.albums.insert(
+	{
+		"title": "Led Zeppelin II",
+		"release_year": "1969",
+		"genres": ["blues rock", "hard rock"]
+	}
+)
+					</code></pre>					
+				</section>
+
+				<section>
+					<h2 style="color: #5E63C2;"><i class="fa fa-hand-spock-o"></i></h2>
+					<h2>MongoDB Shell</h2>
+					<p>Utiliser la méthode find() pour générer une requête sur une collection</p>
+					<pre><code>
+db.albums.find()
+					</code></pre>		
+					<p>Renvoie la liste de tous les albums dans la collection</p>
+				</section>
+
+				<section>
+					<h2 style="color: #5E63C2;"><i class="fa fa-hand-spock-o"></i></h2>
+					<h2>MongoDB Shell</h2>
+					<p>Mettre à jour des données avec la méthode update()</p>
+					<pre><code>
+db.albums.update(
+	{"title": "Led Zeppelin II"},
+	{
+		$push: { "genres": "blues"}
+	}
+)
+					</code></pre>		
+					<p>Ajoute un genre à la liste des genres de l'album "Led Zeppelin II"</p>
+				</section>
+
+				<section>
+					<h2 style="color: #5E63C2;"><i class="fa fa-hand-spock-o"></i></h2>
+					<h2>MongoDB Shell</h2>
+					<p>Supprimer des documents dans une collection avec la méthode remove()</p>
+					<pre><code>
+db.albums.remove(
+	{
+		"genres": { $in: ["rockabilly"] }
+	}
+)
+					</code></pre>		
+					<p>Supprime tous les albums dont un des genres déclarés est 'rockabilly'</p>
+				</section>
+
+				<section>
+					<h2 style="color: #5E63C2;"><i class="fa fa-hand-spock-o"></i></h2>
+					<h2>MongoDB Shell</h2>
+					<p>On peut également avec MongoDB shell
+					<ul>
+						<li>Réaliser des aggrégations de données</li>
+						<li>Gérer les index</li>	
+						<li>Administrer la base de données</li>
+					</ul>
+					</p>					
+				</section>
+
+				<section>
+					<h2 style="color: #5E63C2;"><i class="fa fa-hand-spock-o"></i></h2>
+					<h2>Drivers</h2>
+					<p>Il existe un grand nombre de drivers disponibles pour interagir avec MongoDB depuis une application
+					<ul>
+						<li>C, C++, C#</li>
+						<li>Java, Scala</li>	
+						<li>Node.js, PHP</li>
+						<li>Perl, Python, Ruby</li>						
+					</ul>
+					</p>					
+				</section>
+
+				<section>
+					<h2 style="color: #5E63C2;"><i class="fa fa-search"></i></h2>
+					<h2>Les requêtes en détail</h2>
+					<p>
+						Une requête se fait via la méthode find()			
+					</p>					
+					<pre><code>
+db.albums.find(
+	{ "release_year": { $gt: 1960 } },
+	{ title: 1}
+).limit(10)
+					</code></pre>	
+					<p>Elle s'applique sur une collection, en précisant les critères de recherche, les champs à sélectionner ainsi qu'un modificateur de curseur. Chacun de ces éléments est optionnel.</p>
+				</section>
+
+				<section>
+					<h2 style="color: #5E63C2;"><i class="fa fa-search"></i></h2>
+					<h2>Les requêtes en détail</h2>
+					<p>
+						Le comportement des requêtes est le suivant
+					</p>
+					<p>Elle s'applique sur une collection, en précisant les critères de recherche, les champs à sélectionner ainsi qu'un modificateur de curseur. Chacun de ces éléments est optionnel.</p>
 				</section>
 
 				<section>
