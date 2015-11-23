@@ -242,6 +242,7 @@
 					<h1>Les mains dans le cambouis</h1>
 					<h1 style="color: #5E63C2;"><i class="fa fa-hand-spock-o"></i></h1>
 					<h3>Interagir avec la base</h3>
+					<img src="https://45.media.tumblr.com/35d5ca50a738ef8d398258913a326718/tumblr_nrj2aqA3BX1rb2l1co1_400.gif" width="300px">
 				</section>
 
 				<section>
@@ -278,7 +279,7 @@ db.albums.insert(
 					<pre><code>
 db.albums.find()
 					</code></pre>		
-					<p>Renvoie la liste de tous les albums dans la collection</p>
+					<p>Renvoie la liste de tous les albums de la collection</p>
 				</section>
 
 				<section>
@@ -565,6 +566,102 @@ db.albums.find(
 					</section>
 
 				</section>
+
+				<section>
+					<h1>Concrètement on fait quoi?</h1>
+					<h1 style="color: #21A6E5;"><i class="fa fa-sitemap"></i></h1>
+					<h3>L'heure du choix</h3>
+				</section>
+
+				<section>
+					<section>
+						<h1 style="color: #21A6E5;"><i class="fa fa-sitemap"></i></h1>
+						<h3>Quelques contraintes / axes de réflexion</h3>
+					</section>	
+
+					<section>
+						<h1 style="color: #21A6E5;"><i class="fa fa-sitemap"></i></h1>
+						<h3>Contrainte de modélisation</h3>
+						<p>
+							<ul>
+								<li>Modélisation documentaire</li>
+								<li>Pas de jointure</li>
+								<li>Dénormalisation souvent nécessaire</li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h1 style="color: #21A6E5;"><i class="fa fa-sitemap"></i></h1>
+						<h3>Une conception orientée application</h3>
+						<p>
+							Le modèle conçu est piloté par les besoins de l'application							
+						</p>
+						<p>
+							<span class="subtext"><i class="fa fa-arrow-right"></i> Pas forcément adapté à une autre</span>
+						</p>				
+						<p>
+							Avec un SGBDR, on capte l'essence des données, on modélise un domaine
+						</p>		
+						<p>
+							Avec MongoDB, on cherche le meilleur moyen d'organiser nos données pour répondre au mieux aux besoins applicatifs
+						</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h1 style="color: #21A6E5;"><i class="fa fa-toggle-on"></i></i></h1>
+						<h3>Critères de choix de MongoDB</h3>
+					</section>
+
+					<section>
+						<h1 style="color: #21A6E5;"><i class="fa fa-toggle-on"></i></i></h1>
+						<h3>Besoin de scalabilité</h3>						
+					</section>
+
+					<section>
+						<h1 style="color: #21A6E5;"><i class="fa fa-toggle-on"></i></i></h1>
+						<h3>Un modèle susceptible d'évoluer</h3>
+						<p>
+							<span class="subtext"><i class="fa fa-arrow-right"></i> Dans certaines limites</span>
+						</p>
+					</section>
+
+					<section>
+						<h1 style="color: #21A6E5;"><i class="fa fa-toggle-on"></i></i></h1>
+						<h3>Un modèle documentaire</h3>
+						<p>
+							Gestion d'objets relativement simples (documents, factures, articles, géospatial)
+						</p>
+						<p>
+							Pas de liens complexes entre plusieurs objets, domaine de prédilection des SGBDR
+						</p>
+					</section>
+
+					<section>
+						<h1 style="color: #21A6E5;"><i class="fa fa-toggle-on"></i></i></h1>
+						<h3>Un environnement javascript</h3>						
+						<p>							
+							<img src="http://meanjs.org/img/logo.png" style="background-color:#eee" width="200px" alt="Mean.js">
+						</p>
+					</section>
+
+					<section>
+						<h1 style="color: #21A6E5;"><i class="fa fa-toggle-on"></i></i></h1>
+						<h3>Simplicité d'utilisation</h3>
+						<p>
+							Un "bonus"
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<h1 style="color: #21A6E5;"><i class="fa fa-cog"></i></i></h1>
+					<h1>Démo</h1>
+				</section>
+
 			</div>
 
 		</div>
