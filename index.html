@@ -568,6 +568,72 @@ db.albums.find(
 				</section>
 
 				<section>
+					
+					<section>
+						<h2 style="color: #5E63C2;"><i class="fa fa-sliders"></i></h2>
+						<h2>Aggregation</h2>
+						<p>
+							Proposer un ensemble d'outils permettant d'analyser et de réaliser des opérations sur des ensembles de données
+						</p>
+					</section>
+
+					<section>
+						<h2 style="color: #5E63C2;"><i class="fa fa-sliders"></i></h2>
+						<h3>Aggregation pipelines</h3>
+						<p>
+							Un pipeline d'aggrégation:
+							<ul>
+								<li>agit sur une collection</li>
+								<li>est composé de plusieurs étapes de type
+									<ul>
+										<li>sélection ($match, $skip)</li>
+										<li>formatage ($project, $unwind)</li>
+										<li>tri ($sort)</li>
+										<li>jointure! (depuis la version 3.2: $lookup)</li>
+									</ul>
+								</li>
+							</ul>							
+						</p>						
+						<aside class="notes">
+							<p>
+								$match filtre les documents à l'aide d'une requête
+							</p>
+							<p>
+								$project permet d'exclure/inclure des champs, également d'en créer de nouveaux.<br>
+								$unwind permet d'éclater un document selon un champ de type tableau.
+							</p>
+							<p>
+								$lookup permet de faire un left outer join avec une autre collection (<u>unsharded</u>) de la même BD
+							</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2 style="color: #5E63C2;"><i class="fa fa-sliders"></i></h2>
+						<h3>Aggregation pipelines</h3>
+						<img src="img/aggregation-pipeline.png" style="background-color: #ddd;">
+
+						<aside class="notes">
+						</aside>
+					</section>		
+
+					<section>
+						<h2 style="color: #5E63C2;"><i class="fa fa-sliders"></i></h2>
+						<h3>Partitionnement des données</h3>
+						<p>
+							Clé de partitionnement = un champ (ou un groupe de champ) indexé
+						</p>
+						<p>
+							Le partitionnement est fait automatiquement
+							<p class="subtext">
+								Egalement lors de l'ajout / suppression d'un shard à chaud
+							</p>
+						</p>
+					</section>
+
+				</section>
+
+				<section>
 					<h1>Concrètement on fait quoi?</h1>
 					<h1 style="color: #21A6E5;"><i class="fa fa-sitemap"></i></h1>
 					<h3>L'heure du choix</h3>
