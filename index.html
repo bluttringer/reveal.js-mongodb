@@ -442,7 +442,18 @@ db.albums.find(
 						<p>
 							Les locks sont de multiple granularité: global, base, collection
 						</p>
-					</section>
+
+						<aside class="notes">
+							<p>
+								<ul>
+									<li>MMAPv1: moteur de stockage original de MongoDB basé sur des fichiers en mémoire. Excellent pour travailler sur des gros volumes d'inserts, de lecture de d'updates.</li>
+									<li>Wired Tiger: disponible depuis mongo 3 pour les builds 64 bits. <b>Moteur par défaut depuis la 3.2</b>. Offre une gestion des locks au niveau document.</li>
+									<li>Depuis la 3.2 <b>en beta</b> (Mongo Enterprise): moteur de stockage in-memory. Aucune IO disque, pas de données persistentes.</li>
+									<li>Depuis la 3.2 (Mongo Enterprise): moteur de stockage crypté.</li>
+								</ul>
+							</p>					
+						</aside>	
+					</section>					
 					<section>
 						<h2 style="color: #5E63C2;"><i class="fa fa-lock"></i></h2>						
 						<p>
@@ -718,6 +729,14 @@ db.albums.find(
 						<h3>Simplicité d'utilisation</h3>
 						<p>
 							Un "bonus"
+						</p>
+					</section>
+
+					<section>
+						<h1 style="color: #21A6E5;"><i class="fa fa-graduation-cap"></i></i></h1>
+						<h3>Merci!</h3>
+						<p>
+							Questions?
 						</p>
 					</section>
 				</section>				
